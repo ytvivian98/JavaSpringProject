@@ -16,7 +16,7 @@ import java.sql.Timestamp;
 public class DiscussPost {
     private Integer id;
 
-    private String userId;
+    private Integer userId;
 
     private String title;
 
