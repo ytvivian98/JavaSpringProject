@@ -1,0 +1,60 @@
+2022-07-05 15:17:07.510  INFO 66772 --- [main] com.newcoder.community.LoggerTests       : Starting LoggerTests using Java 1.8.0_281 on LAPTOP-F1172UMD with PID 66772 (started by yutin in D:\git-repo\JavaSpringProject\Community)
+2022-07-05 15:17:07.511 DEBUG 66772 --- [main] com.newcoder.community.LoggerTests       : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-05 15:17:07.512  INFO 66772 --- [main] com.newcoder.community.LoggerTests       : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 15:17:08.242  WARN 66772 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'discussPostMapper' and 'com.newcoder.community.dao.DiscussPostMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:17:08.251  WARN 66772 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.newcoder.community.dao.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:17:08.252  WARN 66772 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.newcoder.community.dao]' package. Please check your configuration.
+2022-07-05 15:17:09.911  INFO 66772 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-05 15:17:10.318  INFO 66772 --- [main] com.newcoder.community.LoggerTests       : Started LoggerTests in 3.241 seconds (JVM running for 4.154)
+2022-07-05 15:17:10.594 DEBUG 66772 --- [main] com.newcoder.community.LoggerTests       : debug log
+2022-07-05 15:17:10.594  INFO 66772 --- [main] com.newcoder.community.LoggerTests       : info log
+2022-07-05 15:17:10.594  WARN 66772 --- [main] com.newcoder.community.LoggerTests       : warn log
+2022-07-05 15:17:10.594 ERROR 66772 --- [main] com.newcoder.community.LoggerTests       : erro log
+2022-07-05 15:20:21.872  INFO 39176 --- [main] com.newcoder.community.LoggerTests       : Starting LoggerTests using Java 1.8.0_281 on LAPTOP-F1172UMD with PID 39176 (started by yutin in D:\git-repo\JavaSpringProject\Community)
+2022-07-05 15:20:21.873 DEBUG 39176 --- [main] com.newcoder.community.LoggerTests       : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-05 15:20:21.875  INFO 39176 --- [main] com.newcoder.community.LoggerTests       : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 15:20:22.551  WARN 39176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'discussPostMapper' and 'com.newcoder.community.dao.DiscussPostMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:20:22.551  WARN 39176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.newcoder.community.dao.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:20:22.551  WARN 39176 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.newcoder.community.dao]' package. Please check your configuration.
+2022-07-05 15:20:24.384  INFO 39176 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-05 15:20:24.840  INFO 39176 --- [main] com.newcoder.community.LoggerTests       : Started LoggerTests in 3.364 seconds (JVM running for 4.221)
+2022-07-05 15:20:25.115 DEBUG 39176 --- [main] com.newcoder.community.LoggerTests       : debug log
+2022-07-05 15:20:25.116  INFO 39176 --- [main] com.newcoder.community.LoggerTests       : info log
+2022-07-05 15:20:25.116  WARN 39176 --- [main] com.newcoder.community.LoggerTests       : warn log
+2022-07-05 15:20:25.116 ERROR 39176 --- [main] com.newcoder.community.LoggerTests       : erro log
+2022-07-05 15:21:21.810  INFO 22388 --- [main] com.newcoder.community.LoggerTests       : Starting LoggerTests using Java 1.8.0_281 on LAPTOP-F1172UMD with PID 22388 (started by yutin in D:\git-repo\JavaSpringProject\Community)
+2022-07-05 15:21:21.812 DEBUG 22388 --- [main] com.newcoder.community.LoggerTests       : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-05 15:21:21.812  INFO 22388 --- [main] com.newcoder.community.LoggerTests       : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 15:21:22.478  WARN 22388 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'discussPostMapper' and 'com.newcoder.community.dao.DiscussPostMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:21:22.478  WARN 22388 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.newcoder.community.dao.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:21:22.479  WARN 22388 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.newcoder.community.dao]' package. Please check your configuration.
+2022-07-05 15:21:24.018  INFO 22388 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-05 15:21:24.411  INFO 22388 --- [main] com.newcoder.community.LoggerTests       : Started LoggerTests in 2.981 seconds (JVM running for 3.864)
+2022-07-05 15:21:24.677 DEBUG 22388 --- [main] com.newcoder.community.LoggerTests       : debug log
+2022-07-05 15:21:24.678  INFO 22388 --- [main] com.newcoder.community.LoggerTests       : info log
+2022-07-05 15:21:24.678  WARN 22388 --- [main] com.newcoder.community.LoggerTests       : warn log
+2022-07-05 15:21:24.678 ERROR 22388 --- [main] com.newcoder.community.LoggerTests       : erro log
+2022-07-05 15:26:17.765  INFO 84376 --- [main] com.newcoder.community.LoggerTests       : Starting LoggerTests using Java 1.8.0_281 on LAPTOP-F1172UMD with PID 84376 (started by yutin in D:\git-repo\JavaSpringProject\Community)
+2022-07-05 15:26:17.766 DEBUG 84376 --- [main] com.newcoder.community.LoggerTests       : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-05 15:26:17.767  INFO 84376 --- [main] com.newcoder.community.LoggerTests       : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 15:26:18.418  WARN 84376 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'discussPostMapper' and 'com.newcoder.community.dao.DiscussPostMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:26:18.418  WARN 84376 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.newcoder.community.dao.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:26:18.418  WARN 84376 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.newcoder.community.dao]' package. Please check your configuration.
+2022-07-05 15:26:19.962  INFO 84376 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-05 15:26:20.323  INFO 84376 --- [main] com.newcoder.community.LoggerTests       : Started LoggerTests in 2.93 seconds (JVM running for 3.774)
+2022-07-05 15:26:20.591 DEBUG 84376 --- [main] com.newcoder.community.LoggerTests       : debug log
+2022-07-05 15:26:20.592  INFO 84376 --- [main] com.newcoder.community.LoggerTests       : info log
+2022-07-05 15:26:20.592  WARN 84376 --- [main] com.newcoder.community.LoggerTests       : warn log
+2022-07-05 15:26:20.592 ERROR 84376 --- [main] com.newcoder.community.LoggerTests       : erro log
+2022-07-05 15:26:56.536  INFO 21656 --- [main] com.newcoder.community.LoggerTests       : Starting LoggerTests using Java 1.8.0_281 on LAPTOP-F1172UMD with PID 21656 (started by yutin in D:\git-repo\JavaSpringProject\Community)
+2022-07-05 15:26:56.538 DEBUG 21656 --- [main] com.newcoder.community.LoggerTests       : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-05 15:26:56.539  INFO 21656 --- [main] com.newcoder.community.LoggerTests       : No active profile set, falling back to 1 default profile: "default"
+2022-07-05 15:26:57.193  WARN 21656 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'discussPostMapper' and 'com.newcoder.community.dao.DiscussPostMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:26:57.193  WARN 21656 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.newcoder.community.dao.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-07-05 15:26:57.193  WARN 21656 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.newcoder.community.dao]' package. Please check your configuration.
+2022-07-05 15:26:58.751  INFO 21656 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-05 15:26:59.113  INFO 21656 --- [main] com.newcoder.community.LoggerTests       : Started LoggerTests in 2.973 seconds (JVM running for 3.85)
+2022-07-05 15:26:59.354 DEBUG 21656 --- [main] com.newcoder.community.LoggerTests       : debug log
+2022-07-05 15:26:59.354  INFO 21656 --- [main] com.newcoder.community.LoggerTests       : info log
+2022-07-05 15:26:59.354  WARN 21656 --- [main] com.newcoder.community.LoggerTests       : warn log
+2022-07-05 15:26:59.354 ERROR 21656 --- [main] com.newcoder.community.LoggerTests       : erro log
