@@ -12,9 +12,24 @@ spring:
     url: jdbc:mysql://localhost:3306/community?characterEncoding=utf-8&useSSL=false
     username: root
     password: yuting
+  # MailProperties
+  mail:
+    host: smtp.163.com
+    port: 465
+    username: ytvivian98@163.com
+    #not the password but the authentiacte code
+    password: YYTAHFSSIRXGHUVI
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
 
 #MyBatis-Plus相关配置
 mybatis-plus:
   configuration:
     #配置日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
