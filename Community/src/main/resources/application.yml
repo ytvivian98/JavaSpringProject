@@ -32,4 +32,8 @@ mybatis-plus:
     #配置日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+# commmunity
+community:
+  path:
+    domain: http://localhost:8080
 
