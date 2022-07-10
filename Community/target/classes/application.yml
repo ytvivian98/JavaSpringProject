@@ -38,4 +38,5 @@ mybatis-plus:
 community:
   path:
     domain: http://localhost:8080
+    upload: d:/javaTestCache/upload
 
