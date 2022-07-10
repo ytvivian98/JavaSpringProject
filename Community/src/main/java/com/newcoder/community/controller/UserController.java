@@ -1,5 +1,6 @@
 package com.newcoder.community.controller;
 
+import com.newcoder.community.annotation.LoginRequired;
 import com.newcoder.community.entity.User;
 import com.newcoder.community.service.UserService;
 import com.newcoder.community.util.CommunityUtil;
@@ -50,11 +51,13 @@ public class UserController {
     @Autowired
     private HostHolder hostHolder;  //取用户信息
 
+    @LoginRequired
     @RequestMapping(path = "/setting",method = RequestMethod.GET)
     public String getSettingPage(){
         return "/site/setting";
     }
 
+    @LoginRequired
     @RequestMapping(path = "/upload",method = RequestMethod.POST)
     public String uploadHeader(MultipartFile headerImg, Model model){
         if(headerImg == null){
@@ -113,6 +116,7 @@ public class UserController {
         }
     }
 
+    @LoginRequired
     @RequestMapping(path = "/updatePwd",method = RequestMethod.POST)
     public String updatePassword(String oldPwd, String newPwd, Model model){
         if(oldPwd == null ){
