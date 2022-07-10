@@ -16,12 +16,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.jws.WebParam;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Map;
 
 /**
  * @author yt
@@ -109,6 +111,30 @@ public class UserController {
             logger.error("读取头像失败： "+e.getMessage());
 
         }
+    }
+
+    @RequestMapping(path = "/updatePwd",method = RequestMethod.POST)
+    public String updatePassword(String oldPwd, String newPwd, Model model){
+        if(oldPwd == null ){
+            model.addAttribute("oldPwdError","您还未输入！");
+            return "/site/setting";
+        }
+        if(newPwd == null ){
+            model.addAttribute("newPwdError","您还未输入！");
+            return "/site/setting";
+        }
+        User user = hostHolder.getUser();
+        Map<String, Object> map = userService.updatePassword(user.getId(), oldPwd, newPwd);
+        if(map.containsKey("passwordMsg")){
+            model.addAttribute("oldPwdError",map.get("passwordMsg"));
+            return "/site/setting";
+        }
+        else if(map.containsKey("newPwdMsg"))
+        {
+            model.addAttribute("newPwdError",map.get("newPwdMsg"));
+            return "/site/setting";
+        }
+        return "redirect:/index";   //修改密码成功后重新登录
     }
 
 }
