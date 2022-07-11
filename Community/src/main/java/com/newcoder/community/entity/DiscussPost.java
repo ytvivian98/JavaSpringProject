@@ -17,19 +17,19 @@ import java.util.Date;
 public class DiscussPost {
     private Integer id;
 
-    private Integer userId;
+    private int userId;
 
     private String title;
 
     private String content;
 
-    private Integer type;
+    private int type;
 
-    private Integer status;
+    private int status;
 
     private Date createTime;
 
-    private Integer commentCount;
+    private int commentCount;
 
-    private Double score;
+    private double score;
 }

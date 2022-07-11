@@ -25,4 +25,7 @@ public interface DiscussPostMapper extends BaseMapper<DiscussPost> {
 
     //插入
     int insertDiscussPost(DiscussPost discussPost);
+
+    //查询帖子的详情
+    DiscussPost selectDiscussPostById(int id);
 }
