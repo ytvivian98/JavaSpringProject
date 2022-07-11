@@ -22,4 +22,7 @@ public interface DiscussPostMapper extends BaseMapper<DiscussPost> {
 
     //使用page插件的分页查看
     Page<DiscussPost> selectDiscussPostsPage(@Param("page") Page<DiscussPost> page, @Param("userId") int userId);
+
+    //插入
+    int insertDiscussPost(DiscussPost discussPost);
 }

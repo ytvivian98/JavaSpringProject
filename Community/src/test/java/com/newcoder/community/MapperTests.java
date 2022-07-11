@@ -85,4 +85,13 @@ public class MapperTests {
         System.out.println(CommunityUtil.md5("123456789" + "1ccef"));
         System.out.println(CommunityUtil.md5("123456789" + "1ccef"));
     }
+
+    @Test
+    public void insertPost(){
+        DiscussPost discussPost = new DiscussPost();
+        discussPost.setTitle("test");
+        discussPost.setContent("mytest");
+        int i = discussPostMapper.insertDiscussPost(discussPost);
+        System.out.println(i);
+    }
 }

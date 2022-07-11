@@ -5,6 +5,7 @@ import lombok.ToString;
 import org.springframework.stereotype.Repository;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * @author yt
@@ -26,7 +27,7 @@ public class DiscussPost {
 
     private Integer status;
 
-    private Timestamp createTime;
+    private Date createTime;
 
     private Integer commentCount;
 
