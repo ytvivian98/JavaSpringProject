@@ -1,5 +1,6 @@
 package com.newcoder.community;
 
+import com.newcoder.community.dao.MessageMapper;
 import com.newcoder.community.util.MailClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,8 @@ public class MailTests {
 
     @Autowired
     private TemplateEngine templateEngine;
+
+
 
     @Test
     public void testTextMail(){
