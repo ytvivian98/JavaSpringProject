@@ -28,4 +28,7 @@ public interface DiscussPostMapper extends BaseMapper<DiscussPost> {
 
     //查询帖子的详情
     DiscussPost selectDiscussPostById(int id);
+
+    //更新评论数量
+    int updateCommentCountInt(int id, int commentCount);
 }

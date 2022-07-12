@@ -17,4 +17,7 @@ public interface CommentMapper {
 
     //查询一共有多少数据
     int selectCountByEntity(@Param("entityType") int entityType, @Param("entityId") int entityId);
+
+    //增加帖子评论
+    int insertComment(Comment comment);
 }

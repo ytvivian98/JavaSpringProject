@@ -14,6 +14,7 @@ import java.util.Date;
 public class Comment {
     private Integer id;
     private int userId;
+    private int entityId;
     private int entityType;
     private int targetId;
     private String content;
