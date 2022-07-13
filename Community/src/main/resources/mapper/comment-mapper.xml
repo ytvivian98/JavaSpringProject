@@ -35,4 +35,6 @@
         insert into comment (<include refid="insertFields"></include>)
         values (#{userId}, #{entityType}, #{entityId}, #{targetId},#{content},#{status}, #{createTime})
     </insert>
+
+
 </mapper>
