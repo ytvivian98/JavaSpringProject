@@ -35,6 +35,7 @@ public class MessageController {
     //私信列表
     @RequestMapping(path = "/letter/list",method = RequestMethod.GET)
     public  String getLetterList(Model model, MyPage myPage){
+
         User user = hostHolder.getUser();
         //设置分页信息
         myPage.setLimit(5);
@@ -66,6 +67,9 @@ public class MessageController {
 
     @RequestMapping(path = "/letter/detail/{conversationId}",method = RequestMethod.GET)
     public String getLetterDetail(@PathVariable("conversationId") String conversationId, MyPage myPage,Model model){
+        //人造错误
+        Integer.valueOf("abc");
+
         //分页信息设置
         myPage.setLimit(5);
         myPage.setPath("/letter/detail/"+conversationId);
@@ -122,6 +126,10 @@ public class MessageController {
     @RequestMapping(path = "/letter/send",method = RequestMethod.POST)
     @ResponseBody
     public String sendLetter(String toName, String content){
+
+        //人造错误
+        Integer.valueOf("abc");
+
         User target = userService.findUserByName(toName);
         if(target == null)
         {
