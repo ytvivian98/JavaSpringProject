@@ -56,7 +56,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.3.21" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.21" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.3.21" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.21" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.21" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.21" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.boot:spring-boot-devtools:2.7.1" level="project" />
@@ -117,5 +116,8 @@
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:2.0.9" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.fastjson2:fastjson2-extension:2.0.9" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.fastjson2:fastjson2:2.0.9" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.21" level="project" />
   </component>
 </module>
