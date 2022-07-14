@@ -27,6 +27,11 @@ spring:
         smtp:
           ssl:
             enable: true
+  #RedisProperties
+  redis:
+    database: 11
+    host: localhost
+    port: 6379
 
 #MyBatis-Plus相关配置
 mybatis-plus:
