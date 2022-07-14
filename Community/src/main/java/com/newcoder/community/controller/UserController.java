@@ -2,6 +2,7 @@ package com.newcoder.community.controller;
 
 import com.newcoder.community.annotation.LoginRequired;
 import com.newcoder.community.entity.User;
+import com.newcoder.community.service.LikeService;
 import com.newcoder.community.service.UserService;
 import com.newcoder.community.util.CommunityUtil;
 import com.newcoder.community.util.HostHolder;
@@ -25,6 +26,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Map;
+
+import static net.sf.jsqlparser.util.validation.metadata.NamedObject.user;
 
 /**
  * @author yt
@@ -50,6 +53,9 @@ public class UserController {
 
     @Autowired
     private HostHolder hostHolder;  //取用户信息
+
+    @Autowired
+    private LikeService likeService;
 
     @LoginRequired
     @RequestMapping(path = "/setting",method = RequestMethod.GET)
@@ -139,6 +145,23 @@ public class UserController {
             return "/site/setting";
         }
         return "redirect:/index";   //修改密码成功后重新登录
+    }
+
+    //个人主页
+    @RequestMapping(path = "/profile/{userId}",method = RequestMethod.GET)
+    public String getProfilePage(@PathVariable("userId") int userId, Model model){
+        User user = userService.findUserById(userId);
+        if(user == null){
+            throw new RuntimeException("用户不存在！");
+        }
+
+        //用户
+        model.addAttribute("user",user);
+        //获得赞的数量
+        int likeCount = likeService.findUserLikeCount(userId);
+        model.addAttribute("likeCount", likeCount);
+
+        return "/site/profile";
     }
 
 }
