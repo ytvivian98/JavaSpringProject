@@ -38,6 +38,10 @@ public class ServiceLogAspect {
         //用户[1,2,3,4]在[xxx],访问了[com.nowcoder.community.service.xxx()]
 
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        if(attributes == null){
+            //说明是特殊访问，可能是kafka相关
+            return ;
+        }
         HttpServletRequest request = attributes.getRequest();
         String ip = request.getRemoteUser();
         String now = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
