@@ -56,7 +56,7 @@ public class MapperTests {
         //用手写的来实现分页
      //   List<DiscussPost> discussPosts = discussPostMapper.selectDiscusPosts(0, 0, 10);
         //使用分页插件
-        Page<DiscussPost> discussPostPage = discussPostMapper.selectDiscussPostsPage(new Page<>(1,10),149);
+        Page<DiscussPost> discussPostPage = discussPostMapper.selectDiscussPostsPage(new Page<>(1,10),149,0);
 
         List<DiscussPost> discussPosts = discussPostPage.getRecords();
         discussPosts.forEach(System.out::println);

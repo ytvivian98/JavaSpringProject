@@ -23,9 +23,9 @@ public class DiscussPostService {
     @Autowired
     private SensitiveFilter sensitiveFilter;
 
-    public List<DiscussPost> findDiscussPost(int userId, int offset, int limit){
+    public List<DiscussPost> findDiscussPost(int userId, int offset, int limit, int orderMode){
         //使用自定义分页插件的方式查看
-        Page<DiscussPost> discussPostPage = discussPostMapper.selectDiscussPostsPage(new Page<>(offset, limit), userId);
+        Page<DiscussPost> discussPostPage = discussPostMapper.selectDiscussPostsPage(new Page<>(offset, limit), userId,orderMode);
         return discussPostPage.getRecords();
         //自定义sql语句，xml
       //  return discussPostMapper.selectDiscusPosts(userId,offset,limit);
@@ -65,6 +65,10 @@ public class DiscussPostService {
 
     public int updateStatus(int id , int status){
         return discussPostMapper.updateStatus(id,status);
+    }
+
+    public int updateScore(int id , double score){
+        return discussPostMapper.updateScore(id, score);
     }
 
 }

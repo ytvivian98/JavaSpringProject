@@ -49,15 +49,15 @@ spring:
     username: newcoder
 
     #TaskExecutionProperties
- task:
-   execution:
-     pool:
-       core-size: 5
-       max-size: 15
-       queue-capacity: 100
-   scheduling:
-     pool:
-       size: 5
+# task:
+#   execution:
+#     pool:
+#       core-size: 5
+#       max-size: 15
+#       queue-capacity: 100
+#   scheduling:
+#     pool:
+#       size: 5
 
 
 

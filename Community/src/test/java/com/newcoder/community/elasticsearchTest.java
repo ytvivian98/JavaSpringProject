@@ -62,15 +62,15 @@ public class elasticsearchTest {
     @Test
     public void testInsertList(){
         //插入多条数据
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(101,0,100));
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(102,0,100));
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(103,0,100));
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(111,0,100));
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(112,0,100));
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(131,0,100));
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(132,0,100));
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(133,0,100));
-        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(134,0,100));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(101,0,100,0));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(102,0,100,0));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(103,0,100,0));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(111,0,100,0));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(112,0,100,0));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(131,0,100,0));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(132,0,100,0));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(133,0,100,0));
+        discussPostRepository.saveAll(discussPostMapper.selectDiscusPosts(134,0,100,0));
     }
 
     @Test
