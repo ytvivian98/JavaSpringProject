@@ -73,5 +73,13 @@ community:
     domain: http://localhost:8001
     upload: d:/javaTestCache/upload
 
-
+# actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        #暴露所有端点
+        include: '*'
+        #排除
+        exclude: cache
 
